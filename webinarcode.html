@@ -4,6 +4,7 @@
  <input type='text' style='display:none;' name='xmIwtLD' value='c52a55200815e4b4cc98d6d71099c6bbfa10084638e5806bbbae498bec087ab0ddbec1b64a1336f0284de513d9f60d01' /> 
 	
 	<div class="form-wrapper">
+		<div class="_2-col-field-wrapper">
 		<div class="field-block">
 		<label class ="field-label" for='REGISTRATIONCF20'>Ansprache<span style='color:red;'>*</span></label>
 		<select class='select-field w-select' style='width:250px;' name='REGISTRATIONCF20'>
@@ -11,16 +12,31 @@
 			<option value='212860000000253028'>Frau</option>
 			<option value='212860000000253030'>Herr</option>
 			</select>
-			
+			</div>
+
+			<div class="field-block">
+			</div>
+			</div>
+
+			<div class="_2-col-field-wrapper">       
+			 <div class="field-block">
 			<label class ="field-label" for='NAME'>Vorname<span style='color:red;'>*</span></label>
 			<input class="text-field w-input" type='text' style='width:250px;'  maxlength='40' name='NAME'></input>
+			</div>
 
+			<div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF1'>Nachname<span style='color:red;'>*</span></label>
 			<input class="text-field w-input" type='text' style='width:250px;'  maxlength='100' name='REGISTRATIONCF1'></input>
+			</div>
+			</div>
 
+			<div class="_2-col-field-wrapper">       
+			 <div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF17'>Unternehmen<span style='color:red;'>*</span></label>
 			<input class="text-field w-input" type='text' style='width:250px;'  maxlength='100' name='REGISTRATIONCF17'></input>
+			</div>
 
+			<div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF21'>Funktion<span style='color:red;'>*</span></label>
 			<select class='select-field w-select' style='width:250px;' name='REGISTRATIONCF21'>
 			<option value="">None</option>
@@ -30,13 +46,23 @@
 			<option value='212860000000253038'>Wohnbereichsleitung</option>
 			<option value='212860000000253040'>Sonstiges</option>
 			</select>
+			</div>
+			</div>
 
+			<div class="_2-col-field-wrapper">       
+			 <div class="field-block">
 			<label class ="field-label" for='EMAIL'>Email<span style='color:red;'>*</span></label>
 			<input class="text-field w-input" type='text' style='width:250px;'  maxlength='251' name='EMAIL'></input>
-		
+			</div>
+
+			<div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF7'>Telefon<span style='color:red;'>*</span></label>
 			<input class="text-field w-input" type='text' style='width:250px;'  maxlength='100' name='REGISTRATIONCF7'></input>		
-		
+			</div>
+			</div>
+
+			<div class="_2-col-field-wrapper">       
+			 <div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF13'>Anzahl Mitarbeiter<span style='color:red;'>*</span></label>
 			<select class='select-field w-select' style='width:250px;' name='REGISTRATIONCF13'>
 			<option value="">None</option>
@@ -50,7 +76,9 @@
 			<option value='212860000000003816'>5,000-10,000</option>
 			<option value='212860000000003818'>More than 10,000</option>
 			</select>
-			
+			</div>
+
+			<div class="field-block">
 			<label class ="field-label" for='REGISTRATIONCF22'>Sind Sie bereits SuperNurse Kunde?<span style='color:red;'>*</span></label>
 			<select class='select-field w-select' style='width:250px;' name='REGISTRATIONCF22'>
 			<option value="">None</option>
@@ -58,6 +86,10 @@
 			<option value='212860000000253044'>Nein</option>
 			<option value='212860000000253046'>Vielleicht bald</option>
 			</select>
+			</div>
+</div>
+
+
 		</div>
 		
 		<script type='text/javascript'>handleRecurringDateTimeChange(document.querySelector('#recurringAllDateTime')); function handleRecurringDateTimeChange(el) { var selected = document.querySelector('#recurringAllDateTime') && document.querySelector('#recurringAllDateTime').options && document.querySelector('#recurringAllDateTime').options[el.selectedIndex]; if(selected) { var entityId = selected.getAttribute('data-campaignid'); var sysIdSel = '[name="sysId"]'; document.querySelector(sysIdSel).value = entityId; } }</script><tr><td colspan='2' align='center' > <input   style='font-size:12px;color:black' type='submit' name='save' value='Submit' ></input> <input type='reset' name='reset' style='font-size:12px;color:black' value='Reset' ></input> </td></tr></table><script> var mndFileds=new Array('NAME','EMAIL','REGISTRATIONCF1','REGISTRATIONCF13','REGISTRATIONCF20','REGISTRATIONCF17','REGISTRATIONCF21','REGISTRATIONCF7','REGISTRATIONCF13','REGISTRATIONCF22');var fldLangVal=new Array('First Name','Email','Last Name','Number of Employees','Ansprache','Unternehmen','Funktion','Phone','Number of Employees','Sind Sie bereits SuperNurse Kunde?');var name='';var email='';function reloadImg(){document.getElementById('imgid').src = document.getElementById('imgid').src;} function checkMandatory212860000000243154(){var emailPattern = /^([^\s@<>]{1,200})@([^\s@<>]{1,300})$/; for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebForm212860000000243154'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty.'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none.'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}} else if(mndFileds[i] == 'EMAIL' && fieldObj.value && !(emailPattern.test(fieldObj.value))) { fieldObj.focus(); return false; } if(fieldObj.type == 'text') { fieldObj.value = fieldObj.value.trim(); } try{if(fieldObj.name == 'Last Name'){name = fieldObj.value;}}catch(e){}}}}
